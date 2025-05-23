@@ -1,0 +1,149 @@
+In transport sector the ministry of Infrastructure is focused on constructing and maintaining roads that connect the secondary cities to capital city.Below is the list of both existing roads and those scheduled for construction, along with their estimated budgets in Rwf
+
+1. Kigali-Muhanga (Frw 28.6 Billion)
+2. Kigali-Musanze (Frw 28.6 Billion)
+3. Kigali-Nyagatare (Frw 70.84 Billion)
+4. Muhanga-Huye (Frw 56.7 Billion)
+5. Musanze-Rubavu (Frw 33.7 Billion)
+6. Huye-Rusizi (Frw 80.96 Billion)
+7. Muhanga-Rusizi (Frw 117.5 Billion)
+8. Musanze-Nyagatare (Frw 96.14 Billion)
+9. Muhanga-Nyagatare (Frw 66.3 Billion)
+
+Each city is assigned a numerical id as follows
+Kigali (1)
+Huye(2)
+Muhanga(3)
+Musanze(4)
+Nyagatare(5)
+Rubavu(6)
+Rusizi(7)
+
+Additional cities, each city will receive next available index nnumber. example: after 7 comes 8
+
+Tasks as a c++ developer:
+the ministry has hired you to develop a c++ console application that includes the following functionalities:
+1. Record existing cities
+2.Add new cities
+3.Register roads between cities
+4.aSSIGN and manage road budgets
+5.Modify city details
+6.Search for a specific city
+7.Display all recorded data on the console
+8. Exit the application
+
+ Task1: Add new city(ies) after specifying the number of cities to be added
+
+ Task2:
+a) Add roads between cities (1 if there is road between 2 cities or 0 if there is no road between 2 cities)
+b) Add the budget for roads specified
+
+Task3:
+A) Save cities in cities.txt with two columns, index and city_name. Save the roads in roads.txt with columns road and budget as recorded
+
+Task 4:
+a) Edit/update the city name
+b) Search for a city by entering its name
+
+Task 5:
+a) Use Graph to output recorded data using adjacency matrices, one for roads and another for budget as recorded
+
+Instructions:
+=> start with writing down the flowchart indicating functionaluty of the application that need to be developed
+=> Program follow the following menus:
+
+Menu 1:Add the given cities (all the 7 given cities will be added)
+display :
+1. Add new city(ies)
+2. Add roads between cities
+3. Add the budget for roads
+4.Edit city
+5. Search for a city using its index
+6. Display  cities
+7. Display roads 
+8. Display recorded data on console 
+9. Exit
+
+** adding the cities
+Enter your choice: 1
+Enter the number of cities to add: 7
+Enter the name for city 1: city-name
+Enter the name for city 2: city-name
+Enter the name for city 3: city-name
+Enter the name for city 4: city-name
+Enter the name for city 5: city-name
+Enter the name for city 6: city-name
+Enter the name for city 7: city-name
+Enter the name for city 8: city-name
+Enter the name for city 9: city-name
+
+** add roads between existing cities:
+Enter your choice: 2
+Enter the name of the first city: Kigali
+Enter the name of second city: Musanze
+Road added between Kigali and Musanze
+
+** Add roads' budget:
+Enter your choice: 3
+Enter the name of the first city: Kigali
+Enter the name of second city: Musanze
+Enter the budget for the road: 28.6
+Budget added for the road between Kigali and Musanze
+
+** Edit city:
+Enter your choice: 4
+Enter the index of the city to edit: 1
+Enter the new name of the city: Kibagabaga
+City updated successfully
+
+**Search for a city by providing its index:
+Enter your choice: 5
+Enter the city's index: 2
+The city with index 2 is Huye
+
+**Display Cities:
+Enter your choice: 6
+Cities:
+1. Kibagabaga
+2. Huye
+3. Muhanga
+4. Musanze
+5. Nyagatare
+6. Rubavu
+7. Rusizi
+
+** Display roads:
+Enter your choice: 7
+Roads:
+1. road-name
+2. road-name
+3. road-name
+4. road-name
+5. road-name
+6. road-name
+7. road-name
+8. road-name
+9. road-name
+
+**Display recorded data on console(On choice 8, recorded cities, two adjacency matrices one of roads and one of budget will be displayed on the console)
+Enter your choice: 7
+Recorded data:
+
+
+**Exit:
+Enter your choice: 9
+Program exited successfully
+
+Nb: IN THE txts, data are displayed, respectively
+cities.txt
+
+Index       City_name
+1           Kigali
+2           Huye
+
+roads.txt
+Nbr    Road    Budget
+
+City is recorded only once
+If no roads between 2 cities, no budget can be added
+
