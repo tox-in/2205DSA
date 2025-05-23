@@ -3,7 +3,6 @@ Index	City_name
 2	Huye
 3	Muhanga
 4	Musanze
-5	Nyagatare
+5	Gabiro
 6	Rubavu
 7	Rusizi
-8	Kamonyi
