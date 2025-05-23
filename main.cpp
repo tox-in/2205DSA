@@ -447,6 +447,7 @@ int main()
                   else
                   {
                         system.displayRoads();
+                        system.displayAdjacencyMatrices();
                   }
                   break;
             }
