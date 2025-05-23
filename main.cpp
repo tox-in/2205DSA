@@ -144,6 +144,40 @@ public:
             }
       }
 
+      void displayRoadAdjacencyMatrix()
+      {
+            if (cities.empty())
+            {
+                  cout << "No cities recorded yet!\n";
+                  return;
+            }
+
+            int size = cities.size();
+            vector<vector<int>> roadMatrix(size, vector<int>(size, 0));
+
+            for (const auto &road : roads)
+            {
+                  roadMatrix[road.city1 - 1][road.city2 - 1] = 1;
+                  roadMatrix[road.city2 - 1][road.city1 - 1] = 1;
+            }
+
+            // Road Adjacency Matrix
+            cout << "\nRoad Adjacency Matrix:\n   ";
+            for (int i = 1; i <= size; i++)
+                  cout << setw(4) << i;
+            cout << endl;
+
+            for (int i = 0; i < size; i++)
+            {
+                  cout << setw(3) << i + 1;
+                  for (int j = 0; j < size; j++)
+                  {
+                        cout << setw(4) << roadMatrix[i][j];
+                  }
+                  cout << endl;
+            }
+      }
+
       void saveToFiles()
       {
             ofstream cityFile("cities.txt");
@@ -447,7 +481,7 @@ int main()
                   else
                   {
                         system.displayRoads();
-                        system.displayAdjacencyMatrices();
+                        system.displayRoadAdjacencyMatrix();
                   }
                   break;
             }
